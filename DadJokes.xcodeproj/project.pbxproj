@@ -11,6 +11,7 @@
 		90A08B6D27C5234B00A0C59D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A08B6C27C5234B00A0C59D /* ContentView.swift */; };
 		90A08B6F27C5235B00A0C59D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A08B6E27C5235B00A0C59D /* Assets.xcassets */; };
 		90A08B7227C5235B00A0C59D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A08B7127C5235B00A0C59D /* Preview Assets.xcassets */; };
+		90A08B7B27C5284D00A0C59D /* DadJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A08B7A27C5284D00A0C59D /* DadJoke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		90A08B6C27C5234B00A0C59D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90A08B6E27C5235B00A0C59D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90A08B7127C5235B00A0C59D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90A08B7A27C5284D00A0C59D /* DadJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJoke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				90A08B6A27C5234B00A0C59D /* DadJokesApp.swift */,
-				90A08B6C27C5234B00A0C59D /* ContentView.swift */,
+				90A08B7927C5280600A0C59D /* Views */,
+				90A08B7827C527F800A0C59D /* Model */,
 				90A08B6E27C5235B00A0C59D /* Assets.xcassets */,
 				90A08B7027C5235B00A0C59D /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				90A08B7127C5235B00A0C59D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90A08B7827C527F800A0C59D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90A08B7A27C5284D00A0C59D /* DadJoke.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90A08B7927C5280600A0C59D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90A08B6C27C5234B00A0C59D /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			files = (
 				90A08B6D27C5234B00A0C59D /* ContentView.swift in Sources */,
 				90A08B6B27C5234B00A0C59D /* DadJokesApp.swift in Sources */,
+				90A08B7B27C5284D00A0C59D /* DadJoke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
