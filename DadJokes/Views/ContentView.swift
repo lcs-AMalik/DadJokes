@@ -10,9 +10,14 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored properties
+    
+    // Holds the joke that was just retrieved
     @State var currentJoke: DadJoke = DadJoke(id: "",
                                               joke: "Knock, Knock",
                                               status: 0)
+    
+    // Hold a list of favourite jokes
+    @State var favourites: [DadJoke] = [] // Empty list
     
     // MARK: Computed properties
     var body: some View {
@@ -30,6 +35,10 @@ struct ContentView: View {
             Image(systemName: "heart.circle")
                 .resizable()
                 .frame(width: 40, height: 40)
+                .onTapGesture {
+                    // Add the current joke to the list
+                    favourites.append(currentJoke)
+                }
             
             Button(action: {
                 print("button was pressed")
@@ -58,10 +67,10 @@ struct ContentView: View {
                 Spacer()
             }
             
-            List {
-                Text("Which side of the chicken has more feathers? The outside.")
-                Text("Why did the Clydesdale give the pony a glass of water? Because he was a little horse!")
-                Text("The great thing about stationery shops is they're always in the same place...")
+            // Iterat (loop) over the list (array) of jokes
+            // Make each joke accessible using the name "currentJoke"
+            List(favourites) { currentJoke in
+                Text(currentJoke.joke)
             }
             
             Spacer()
